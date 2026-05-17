@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    </body>
+</head>
+<body>
+  
+    <header>
+        <h1>Recursos Multimídia do Curso</h1>
+    </header>
+
+    <main>
+        
+        <!-- Bloco 1: Vídeo nativo com legenda, poster e múltiplos formatos -->
+        <section>
+            <h2>Vídeo da Aula</h2>
+            <figure>
+                <video controls width="800" height="450" src="https://www.youtube.com/watch?v=Ejkb_YpuHWs" poster="https://tse4.mm.bing.net/th/id/OIP.Ovu5_PwHUn9S4wZ-yPjZVAHaEK?pid=Api&P=0&h=180" preload="metadata">
+                    <source src="" type="video/webm">
+                    <source src="" type="video/mp4">
+                    <track kind="subtitles" src="legendas/aula-html.vtt" srclang="pt" label="Português" default>
+                    
+                    <!-- Fallback para navegadores antigos -->
+                    <p>
+                        Seu navegador não suporta a reprodução nativa deste vídeo. 
+                        <a href="aula.mp4" download>Clique aqui para baixar o vídeo da aula (.mp4)</a>.
+                    </p>
+                </video>
+                <figcaption>Aula 1: Estrutura Básica do HTML5. Fonte: Acervo Interno do Curso.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Bloco 2: Áudio nativo com fallback e link para transcrição -->
+        <section>
+            <h2>Podcast Educacional</h2>
+            <figure>
+                <audio controls preload="metadata">
+                    <source src="podcast-ep01.ogg" type="audio/ogg">
+                    <source src="podcast-ep01.mp3" type="audio/mpeg">
+                    
+                    <!-- Fallback para navegadores antigos -->
+                    <p>
+                        Seu navegador não suporta a reprodução de áudio. 
+                        <a href="podcast-ep01.mp3" download>Clique aqui para baixar o áudio (.mp3)</a>.
+                    </p>
+                </audio>
+                <figcaption>
+                    Episódio 1: A evolução da Web e a semântica do HTML. 
+                    <a href="transcrição.html">Acessar a transcrição do episódio</a>.
+                </figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Bloco 3: Vídeo externo via iframe (YouTube com privacidade e lazy loading) -->
+        <section>
+            <h2>Material Complementar Externo</h2>
+            <figure>
+                <iframe 
+                    width="800" 
+                    height="450" 
+                    src="https://www.youtube.com/watch?v=Ejkb_YpuHWs" 
+                    title="Vídeo educacional: O que é HTML5 e como ele funciona (Curso em Vídeo)" 
+                    loading="lazy" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+                <figcaption>Vídeo complementar sobre HTML5 e semântica. Canal: Curso em Vídeo. Plataforma: YouTube.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Bloco 4: Imagem responsiva demonstrando Art Direction -->
+        <section>
+            <h2>Ilustração Responsiva (Art Direction)</h2>
+            <figure>
+                <picture>
+                    <!-- Regra para telas a partir de 768px (tablets e desktops) -->
+                    <source media="(min-width: 768px)" srcset="img/banner-wide.jpg">
+                    
+                    <!-- Fallback nativo que será carregado em celulares (ou caso o <picture> não seja suportado) -->
+                    <img src="https://png.pngtree.com/png-clipart/20230814/original/pngtree-a-network-of-people-connected-by-technology-people-boy-communicating-vector-picture-image_10619084.png" alt="Ilustração mostrando diferentes pessoas conectadas através de dispositivos móveis e computadores." width="400" height="300">
+                </picture>
+                <figcaption>Ilustração do ambiente virtual, adaptando o enquadramento de acordo com a tela do usuário.</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <strong>Nome:</strong> Luiz Guilherme da Silva Santos 
+            <strong>Matrícula:</strong> 2026312070 | 
+            <strong>Data:</strong> 13/03/2011
+        </p>
+    </footer>
+
+
+
+  
+</body>
+</html>
