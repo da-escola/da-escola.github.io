@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        table {
+            width: 80%; /* Faz a tabela ocupar 80% da tela em vez de ficar esmagada no canto */
+            border-collapse: collapse; /* Transforma as bordas duplas e feias em uma linha fina e bonita */
+            margin: 20px 0; /* Dá um espaço entre o título e a tabela */
+        }
+        
+        th, td {
+            padding: 15px; /* CRIA O ESPAÇO INTERNO! Tente mudar para 20px ou 10px para ver a diferença */
+            text-align: center; /* Centraliza o texto dentro dos quadradinhos */
+        }
+        
+        th {
+            background-color: #5c0176; /* Coloca um fundo cinza clarinho apenas no cabeçalho dos dias da semana */
+        }
+        td{ background-color: #5d017666;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 — Tabela Semântica com Mesclagem</title>
+</head>
+<body>
+    
+        <table>
+            <caption>notas finais da turma 2026</caption>
+            <tr>     <th scope="1">ALUNO</th>
+                     <th scope="1">1° Bimestre</th>
+                     <th scope="1">2° Bimestre</th>
+                     <th scope="1">3° Bimestre</th>
+                     <th scope="1">4° Bimestre</th>
+                     <th scope="1">MEDIA</th>
+             </tr>
+    <tbody>
+             <tr>
+                    <td>didi</td>
+                    <td>10</td>
+                     <td>8</td>
+                    <td>9</td>
+                     <td>7</td>
+                   <td rowspan="1"> 8,5</td>
+                   
+             </tr>
+             <tr>
+                    <td colspan="1">fabio</td>
+                    <td>8</td>
+                     <td>9</td>
+                    <td>8</td>
+                     <td>9</td>
+                   <td rowspan="1"> 8,5</td>
+             </tr>
+             <tr>
+                    <td>jao</td>
+                    <td>7</td>
+                     <td>8</td>
+                    <td>7</td>
+                     <td>8</td>
+                    <td rowspan="1"> 7,5</td>
+             </tr>
+             <tr>
+                    <td>marcos</td>
+                    <td>9</td>
+                     <td>7</td>
+                    <td>9</td>
+                     <td>7</td>
+                    <td rowspan="1"> 8</td>
+             </tr>
+             <tr>
+                    <td>ken</td>
+                    <td>8</td>
+                     <td>8</td>
+                    <td>8</td>
+                     <td>8</td>
+                    <td rowspan="1"> 8</td>
+             </tr>
+             <tr>
+                    <td>dedo</td>
+                    <td>7</td>
+                     <td>7</td>
+                    <td>7</td>
+                     <td>7</td>
+                    <td rowspan="1"> 7</td>
+             </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6"> media da turma 8.0 </td>
+                </tr>
+            </tfoot>
+    </table>
+
+
+
+
+
+
+
+    </body>
+</html>
