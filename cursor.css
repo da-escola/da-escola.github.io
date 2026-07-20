@@ -1,0 +1,15 @@
+*{
+    
+    cursor: url("icons8-pointer-24.png"), auto !important;
+    
+}
+*:active {
+    cursor: url("icons8-pointer-32.png"), auto !important;
+    
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    margin: 0;
+}
