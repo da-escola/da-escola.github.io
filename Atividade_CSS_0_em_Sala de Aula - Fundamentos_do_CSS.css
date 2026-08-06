@@ -98,7 +98,7 @@ p {
 /* ---------- Grade de trilhas ---------- */
 .cartao {
   display: inline-block;
-  width: 24vw;
+  width:280px;
   vertical-align: top;
   border: 1px solid #000000;
   background-color: #ffffff;
