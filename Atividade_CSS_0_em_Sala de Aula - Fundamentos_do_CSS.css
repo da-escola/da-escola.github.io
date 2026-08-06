@@ -1,0 +1,232 @@
+/*o "em" ele pega o valor do pai e o "rem" ele tem uma fonte principal de 16 pixel e a % ou vw ela pode ocupar toda ou metade da tela*/
+
+/* o :nth-child() Ele ordena os elementos e realiza em tempo real e não e necessarios das classes de marcação.*/
+
+/* =====================================================================
+   atv01.css  —  ARQUIVO DE TRABALHO DA ATIVIDADE
+   ---------------------------------------------------------------------
+   Este CSS é funcional, porém deliberadamente básico:
+     - usa apenas seletores de tipo, de classe e de id;
+     - expressa TODAS as medidas em pixels (px);
+     - contém repetição de regras.
+   Sua tarefa é refatorá-lo conforme o enunciado, sem alterar o HTML.
+   ===================================================================== */
+
+/* ---------- Base ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+/* ---------- Cabeçalho ---------- */
+.cabecalho {
+  background-color: #1565c0;
+  padding: 32px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.subtitulo {
+  color: #bbdefb;
+  font-size: 1rem;
+}
+
+/* ---------- Menu de navegação ---------- */
+.menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 16px 0px 0px 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.menu a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.menu a::before {
+  content: "› ";
+  margin-right: 0.5rem;
+  color: #bbdefb;
+}
+
+
+
+/* ---------- Seções ---------- */
+.secao {
+  padding: 32px;
+  max-width: 55%;
+}
+
+h2 {
+  color: #1565c0;
+  font-size: 1.8rem;
+}
+
+h3 {
+  color: #0d47a1;
+  font-size: 1.4rem
+}
+
+p {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.destaque  {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #b71c1c;
+}
+.destaque ~ p {
+  color: #f76300;
+}
+
+
+
+/* ---------- Grade de trilhas ---------- */
+.cartao {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+
+/* o :nth-child() Ele ordena os elementos e realiza em tempo real e não e necessarios das classes de marcação.
+ */
+.cartao:nth-child(-n+3) {
+  background-color: #2d4963a4; 
+}
+
+.cartao:nth-child(3n+1) {
+  background-color: #e3f2fd; 
+}
+.botao {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #1ac5e4;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 0.5rem 0px 0px 0px;
+}
+
+.botao:hover {
+  background-color: #ff5252;
+  color: #ffffff;
+}
+
+/* =====================================================================
+   CONFLITO DE ESPECIFICIDADE (PROPOSITAL)
+   --------------------------------------------------------------------- */
+
+/* 1. Regra por Classe (Especificidade menor) */
+.botao {
+  background-color: #1565c0; /* Azul */
+}
+
+/* 2. Regra por Seletor Composto (Especificidade maior - Vence o conflito) */
+.cartao .botao {
+  background-color: #2e7d32; /* Verde */
+}
+
+/* PREVISÃO EM COMENTÁRIO: 
+   A Regra 2 (.cartao .botao) prevalecerá e o botão ficaria VERDE.
+   
+   POR QUÊ?
+   O seletor composto é mais específico e tem mais "peso" para o navegador 
+   do que a classe sozinha. Por isso, ele ignora a cor azul e aplica a verde.
+*/
+
+/* 3. RESOLUÇÃO DO CONFLITO (Sem usar !important) */
+.cartao a.botao {
+  background-color: #1565c0; /* O Azul volta a vencer por ser ainda mais específico */
+}
+.cartao:not(:last-child) {
+  margin-bottom: 0.8rem; /* Adiciona o espaçamento embaixo */
+}
+
+
+
+/* ---------- Lista de programação ---------- */
+.lista-dias {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.lista-dias > li {
+  font-weight: bold;
+}
+
+.lista-dias > li:first-child {
+  color: #0077ff;
+}
+
+.lista-dias > li:last-child {
+  color: #002472;
+}
+
+
+
+
+
+
+
+/* ---------- Formulário ---------- */
+.formulario {
+  max-width: 480px;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+
+input, textarea {
+  display: block;
+  width: 20rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #999999;
+}
+
+input[type="email"] {
+  border: 2px solid #1565c0;
+}
+
+input[type="password"] {
+  border: 2px solid #3b5ffd;
+}
+button {
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1565c0;
+  padding: 8px 24px;
+  margin-top: 16px;
+  border: 0px;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  background-color: #263238;
+  color: #cfd8dc;
+  padding: 24px;
+  font-size: 1rem;
+}
+
