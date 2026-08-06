@@ -98,13 +98,14 @@ p {
 /* ---------- Grade de trilhas ---------- */
 .cartao {
   display: inline-block;
-  width:20vw;
+  width: 50%;
   vertical-align: top;
   border: 1px solid #000000;
   background-color: #ffffff;
   padding: 1em;
   margin: 0.5em;
 }
+
 
 
 /* o :nth-child() Ele ordena os elementos e realiza em tempo real e não e necessarios das classes de marcação.
