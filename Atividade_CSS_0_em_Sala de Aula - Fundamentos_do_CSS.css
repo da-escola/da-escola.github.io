@@ -99,6 +99,7 @@ p {
 .cartao {
   display: inline-block;
   width: 15vw;
+   min-width:200px;
   vertical-align: top;
   border: 1px solid #000000;
   background-color: #ffffff;
