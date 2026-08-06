@@ -1,0 +1,26 @@
+body{
+    .letra{
+        color: white;
+    }
+    background-color: rgb(17, 58, 4);
+    .forma{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items:center;
+        gap: 16px;
+        flex-direction:column;
+    }
+    .item{
+        background-color:purple;
+        color: burlywood;
+        border-radius: 8px;
+        max-height: 80vh;
+        max-width: 45vw;
+    }
+    .imagem {
+  max-width: 13vw;          
+  height: auto;              
+  border-radius: 8px; 
+       
