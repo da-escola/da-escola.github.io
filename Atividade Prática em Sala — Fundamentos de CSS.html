@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trabalho.css">
+</head>
+<body>
+    <h1 class="letra">Cadastro do Evento</h1>
+    <p class="letra">Melores shows!, incriveis para aproveitar o seu tempo</p>
+
+    <h2 class="letra">TEMA:Cadastro de Evento</h2>
+    <fieldset class="item">
+        <form  class="forma" action="">
+        <label for="email">Digite seu email</label>
+        <input id="email" type="email" required>
+
+        <br>
+        <label for="password">Digite uma senha para cadastrar</label>
+        <input type="password"id="password" required>
+
+        <br>
+
+        <label for="date">Digite escolha a data e hora de quando quer chegar</label>
+        <input type="datetime-local" id="data" name="date" required>
+    
+        <br>
+        <label for="tt">preencha o formulario com suas avaliações para melhorar o site.</label>
+        <textarea name="tt" id="tt">Digite o formulario completo</textarea required>
+
+            <br>
+
+            <label for="gg">Escolha esses shows desses cantores para ir</label>
+            <input list="shows" id="gg" name="shows">
+
+            <datalist id="shows">
+                <option value="Oliver tree">
+                <option value="Michael Jackson">
+                <option value="Tupac Shakur">
+                <option value="Bob Marley">
+                <option value="Snoop Dogg">
+                
+            </datalist>
+            <img class="imagem" src="https://cdn.pixabay.com/photo/2016/08/22/11/00/emoticon-1611718_640.png" alt="Emoticon legal">
+    <p>Valeu por ver meu site</p>
+
+            <br>
+
+            
+            <br>
+            </fieldset>
+            <button type="reset">apagar o formulario</button>
+            <button type="submit">enviar o formulario</button>
+    </form>
+    
+</body>
+</html>
